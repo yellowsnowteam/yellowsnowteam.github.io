@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Audiowide|Fredericka+the+Great|Monoton|Orbitron|Righteous|Play|Rock+Salt&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Play', sans-serif;
+    color: #BDBDBD;
+}
+
+header {
+    background-color: #212121;
+}
+
+.layout-positioner {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.main-header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list-item a {
+    display: flex;
+    margin: 10px;
+    width: 125px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.589);
+    font-weight: bold;
+    transition: all 0.1s ease-in;
+}
+
+.nav-list-item a:hover {
+    border: 2px solid #FFC107;
+    border-radius: 20px;
+    background: radial-gradient(#FFC107 15%, #212121 65%);
+    text-shadow: 0 0 4px rgba(233, 114, 18, 0.8);
+    box-shadow: 0 0 4px #BDBDBD;
+    color: white;
+    transition: all 0.1s ease-in;
+}
+
+li.nav-list-item:nth-of-type(1) {
+    width: 120px;
+    height: 50px;
+}
+
+li.nav-list-item:nth-of-type(2),
+li.nav-list-item:nth-of-type(3) {
+    order: -1;
+}
+
+.main-title-content {
+    display: block;
+    min-height: 90px;
+    padding: 20px;
+    color: #FFC107;
+    font-family:  'Monoton', cursive;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.snow-title {
+    color: #BDBDBD;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section {
+    padding-top: 30px;
+}
+
+section:nth-of-type(2n) {
+    background-color: #212121;
+}
+
+section:nth-of-type(2n+1) {
+    background-color: #BDBDBD;
+    color: black;
+}
